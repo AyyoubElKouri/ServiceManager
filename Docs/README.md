@@ -1,5 +1,5 @@
 # Diagramme de Séquence
 
-Vous pouvez consulter le diagramme de séquence dans le fichier PDF ci-dessous :
+Voici le diagramme de séquence de notre système :
 
-👉 [Voir le diagramme de séquence (PDF)](./sequence.pdf)
+![Diagramme de Séquence](./sequence.png)
