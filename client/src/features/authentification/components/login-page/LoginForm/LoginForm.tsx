@@ -1,6 +1,6 @@
-import { useLoginForm } from './LoginForm.hook';
-import { LOGIN_FORM_STYLES } from './LoginForm.styles';
-import type { LoginFormProps } from './LoginForm.types';
+import { useLoginForm } from './files/LoginForm.hook';
+import { LOGIN_FORM_STYLES } from './files/LoginForm.styles';
+import type { LoginFormProps } from './files/LoginForm.types';
 
 /**
  * @component LoginForm

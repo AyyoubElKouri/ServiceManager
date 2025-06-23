@@ -1,6 +1,6 @@
-import { useRegisterHeader } from './RegisterHeader.hook';
-import { REGISTER_HEADER_STYLES } from './RegisterHeader.styles';
-import type { RegisterHeaderProps } from './RegisterHeader.types';
+import { useRegisterHeader } from './files/RegisterHeader.hook';
+import { REGISTER_HEADER_STYLES } from './files/RegisterHeader.styles';
+import type { RegisterHeaderProps } from './files/RegisterHeader.types';
 
 /**
  * @component RegisterHeader

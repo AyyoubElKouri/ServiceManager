@@ -13,7 +13,7 @@ class InterventionService {
         try {
             let  interventions ;
             const Intervention_today = req.query.Intervention_today ;
-            const validateIntervention = req.query.validate || 1 ;
+            const validateIntervention = req.query.validate !== undefined ? parseInt(req.query.validate) : 1;
             const today = new Date();
                         today.setHours(0, 0, 0, 0);
 
@@ -23,25 +23,15 @@ class InterventionService {
             if( Intervention_today ==='false') {
 
                         interventions = await Intervention.findAll({ 
-                                                        where     :  {
-                                                                       validate : parseInt(validateIntervention)
-                                                                    },
                                                         attributes: { exclude: ['updatedAt'] } ,
                                                         include   : {
                                                                 model: Section,
                                                                 attributes: ['name'] // <-- optionnel : liste des attributs à retourner
                                                                   }
-                                                               
+
                                                              });
              }else {
                         interventions = await Intervention.findAll({ 
-                                                        where     :  {
-                                                                       validate : 1 , 
-                                                                       date     : {
-                                                                                [Op.gte]: today,
-                                                                                [Op.lt]: tomorrow
-                                                                        }
-                                                                    },
                                                         attributes: { exclude: ['updatedAt'] } ,
                                                         include   : {
                                                                 model: Section,
@@ -49,7 +39,9 @@ class InterventionService {
                                                                   }
                                                                
                                                              });
-             }                                                 
+             }                                      
+             
+             console.log('Interventions : ', interventions.length) ; // log the number of interventions
 
             //return the Agencies informations
             res.json(interventions);

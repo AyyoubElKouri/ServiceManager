@@ -1,6 +1,6 @@
-import { useRegisterForm } from './RegisterForm.hook';
-import { REGISTER_FORM_STYLES } from './RegisterForm.styles';
-import type { RegisterFormProps } from './RegisterForm.types';
+import { useRegisterForm } from './files/RegisterForm.hook';
+import { REGISTER_FORM_STYLES } from './files/RegisterForm.styles';
+import type { RegisterFormProps } from './files/RegisterForm.types';
 
 /**
  * @component RegisterForm

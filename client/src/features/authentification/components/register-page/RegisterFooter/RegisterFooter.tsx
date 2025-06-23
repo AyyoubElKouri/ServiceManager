@@ -1,6 +1,6 @@
-import { useRegisterFooter } from './RegisterFooter.hook';
-import { REGISTER_FOOTER_STYLES } from './RegisterFooter.styles';
-import type { RegisterFooterProps } from './RegisterFooter.types';
+import { useRegisterFooter } from './files/RegisterFooter.hook';
+import { REGISTER_FOOTER_STYLES } from './files/RegisterFooter.styles';
+import type { RegisterFooterProps } from './files/RegisterFooter.types';
 
 /**
  * @component RegisterFooter

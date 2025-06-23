@@ -1,15 +1,17 @@
-/***********************************************************************************************************************
- * @file Welcome.tsx
- * @description This file contains the Welcome component which is displayed when the user first accesses the application.
- *
- * @license Copyright (c) 2024-2025, Apache License 2.0.
- *
- * @author Ayyoub EL KOURI
- * @date 2025-06-14
- * @lastModified 2025-06-14
- *
- * @version 1.0.0
- **********************************************************************************************************************/
+/*************************************************************************************************************************
+ *                                                                                                                       *
+ * @file Welcome.tsx                                                                                                     *
+ * @description This file contains the Welcome component which is displayed when the user first accesses the application.*
+ *                                                                                                                       *
+ * @license Copyright (c) 2024-2025, Apache License 2.0.                                                                 *
+ *                                                                                                                       *
+ * @author Ayyoub EL KOURI                                                                                               *
+ * @date 2025-06-14                                                                                                      *
+ * @lastModified 2025-06-14                                                                                              *
+ *                                                                                                                       *
+ * @version 1.0.0                                                                                                        *
+ *                                                                                                                       *
+ *************************************************************************************************************************/
 
 import { useWelcome } from './Welcome.hook';
 import { WELCOME_STYLES } from './Welcome.styles';

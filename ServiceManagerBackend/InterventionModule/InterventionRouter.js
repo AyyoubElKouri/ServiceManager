@@ -26,54 +26,48 @@ class IntereventionController {
 
     init() {
         // Define GET route for fetching all Interventions
-        this.router.get('/' ,  
-                               AuthMiddleware.authorizeAdminOnly,
+        this.router.get('/' ,
                                async (req, res) => {
                                return intereventionController.getInterventions(req, res);
-                       }); 
+                       });
 
         // Define POST  route for create new Intervention
-        this.router.post('/', 
+        this.router.post('/',
 
                                async (req, res) => {
                                 return intereventionController.createNewIntervention   (req, res);
                        });
 
-        // Define GET route for fetching Intervention by id
-        this.router.get('/:id', 
+        // Define GET route for fetching Intervention by user id
+        this.router.get('/:id',
 
                                async (req, res) => {
                                return intereventionController.getIntereventionByUserId (req, res);
                         });
 
         // Define GET route for fetching Interevention by id of a user Id
-        this.router.get('/:id/:id_Intervention', 
-                              AuthMiddleware.authorizeUserAndAdmin ,
+        this.router.get('/:id/:id_Intervention',
                               async (req, res) => {
                               return intereventionController.getInterventionById(req, res);
                         });
 
         // Define put route to modify a Intervention by id of a user Id
-        this.router.patch('/:id/:id_Intervention', 
-                            AuthMiddleware.authorizeUserAndAdmin , //Authorize the user and admin to modify the intervention
-                            async (req, res) => {
+        this.router.patch('/:id/:id_Intervention',                            async (req, res) => {
                             return intereventionController.modifyIntervention(req, res);
                         });
 
         // Define delete route for deleting a Intervention by id of a user Id
-        this.router.delete('/:id/:id_Intervention', 
-                             AuthMiddleware.authorizeAdminOnly,
+        this.router.delete('/:id/:id_Intervention',
                             async (req, res) => {
                             return intereventionController.deleteInterventionById(req, res);
                         });
 
-       
+
         // Define delete route for deleting all interventions send from user
-        this.router.delete('/:id', 
-                             AuthMiddleware.authorizeAdminOnly,
+        this.router.delete('/:id',
                             async (req, res) => {
                             return intereventionController.deleteInterventions(req, res);
-                        });                  
+                        });
     }
 }
 

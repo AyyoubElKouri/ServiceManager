@@ -1,6 +1,6 @@
-import { useLoginFooter } from './LoginFooter.hook';
-import { LOGIN_FOOTER_STYLES } from './LoginFooter.styles';
-import type { LoginFooterProps } from './LoginFooter.types';
+import { useLoginFooter } from './files/LoginFooter.hook';
+import { LOGIN_FOOTER_STYLES } from './files/LoginFooter.styles';
+import type { LoginFooterProps } from './files/LoginFooter.types';
 
 /**
  * @component LoginFooter

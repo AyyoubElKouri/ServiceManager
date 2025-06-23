@@ -1,7 +1,7 @@
 import React from 'react';
-import { useLogin } from './Login.hook';
-import { LOGIN_STYLES } from './Login.styles';
-import type { LoginProps } from './Login.types';
+import { useLogin } from './files/Login.hook';
+import { LOGIN_STYLES } from './files/Login.styles';
+import type { LoginProps } from './files/Login.types';
 
 // Import atomic components
 import LoginHeader from '../../components/login-page/LoginHeader';

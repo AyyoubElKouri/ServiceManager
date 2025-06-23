@@ -1,5 +1,5 @@
 import type { ChangeEvent, FormEvent } from 'react';
-import type { LoginFormData, LoginFormErrors } from '../../../pages/Login/Login.types';
+import type { LoginFormData, LoginFormErrors } from '../../../../pages/Login/files/Login.types';
 
 /**
  * @interface LoginFormProps

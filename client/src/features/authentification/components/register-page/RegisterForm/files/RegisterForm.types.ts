@@ -1,5 +1,8 @@
 import type { ChangeEvent, FormEvent } from 'react';
-import type { RegisterFormData, RegisterFormErrors } from '../../../pages/Register/Register.types';
+import type {
+    RegisterFormData,
+    RegisterFormErrors,
+} from '../../../../pages/Register/files/Register.types';
 
 /**
  * @interface RegisterFormProps

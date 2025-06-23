@@ -6,7 +6,7 @@ import sectionController from './SectionController.js';
 
 
 /**
- * @class SectionController 
+ * @class SectionController
  * @brief This class is responsible for the routing mechanism for the Section entity.
  *        In the init function, we add all the functions that will handle HTTP requests.
  *        These functions are defined in the SectionController class. When adding a new endpoint,
@@ -38,7 +38,7 @@ class SectionController {
                        });
 
         // Define GET route for fetching Intervention by id
-        this.router.get('/:id_Section', 
+        this.router.get('/:id_section', 
                                async (req, res) => {
                                return sectionController.getSectionById(req, res);
                         });

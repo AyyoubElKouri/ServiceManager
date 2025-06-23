@@ -1,7 +1,7 @@
 import React from 'react';
-import { useRegister } from './Register.hook';
-import { REGISTER_STYLES } from './Register.styles';
-import type { RegisterProps } from './Register.types';
+import { useRegister } from './files/Register.hook';
+import { REGISTER_STYLES } from './files/Register.styles';
+import type { RegisterProps } from './files/Register.types';
 
 // Import atomic components
 import RegisterHeader from '../../components/register-page/RegisterHeader';

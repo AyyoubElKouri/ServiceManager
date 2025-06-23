@@ -25,7 +25,7 @@ class InterventionController {
     async createNewIntervention    (req, res) { return IneterventionService.createNewIntervention      (req, res) ;}
 
     async modifyIntervention       (req, res) { return IneterventionService.UpdateInterventionById     (req, res) ;}
- 
+
     async deleteInterventionById   (req, res) { return IneterventionService.deleteInterventionById     (req, res) ;}
 
     async deleteInterventions      (req, res) { return IneterventionService.deleteAll                  (req, res) ;}

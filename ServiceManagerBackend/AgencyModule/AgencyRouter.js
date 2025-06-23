@@ -25,21 +25,18 @@ class AgencyRouter {
     init() {
         // Define GET route for fetching all agencies
         this.router.get('/',
-                           AuthMiddleware.authorizeAdminOnly , 
                            async (req, res) => {
                            return AgencyController.getAllAgency(req, res);
                         });
 
         // Define POST route for creating a new agency
         this.router.post('/', 
-                              AuthMiddleware.authorizeAdminOnly  , 
                               async (req, res) => {
                               return AgencyController.createAgency(req, res);
                          });
 
         // Define GET route for fetching agency by ID
         this.router.get('/:id',  
-                                AuthMiddleware.authorizeAdminOnly, 
                                 async (req, res) => {
                                     if (!req.params.id) {
                                         return res.status(400).json({ error: 'ID is required' });
@@ -49,20 +46,18 @@ class AgencyRouter {
 
         // Define PATCH route to modify an agency by ID
         this.router.patch('/:id', 
-                                  AuthMiddleware.authorizeAdminOnly , 
                                   async (req, res) => {
                                   return AgencyController.updateAgency(req, res);
                         });
 
         // Define PATCH route to set the current agency
         this.router.patch('/:id/set-current', 
-                          AuthMiddleware.authorizeAdminOnly , 
                           async (req, res) => {
                           return AgencyController.updateCourantAgency(req, res);
                         });
 
         // Define DELETE route for deleting an agency by ID
-        this.router.delete('/:id', AuthMiddleware.authorizeAdminOnly , 
+        this.router.delete('/:id', 
                                    async (req, res) => {
                                    return AgencyController.deleteAgency(req, res);
                          });

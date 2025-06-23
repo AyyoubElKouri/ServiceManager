@@ -33,7 +33,6 @@ const loginUserSchema = Joi.object(
     password:   Joi.string().min(5).max(200).required(),
 });
 
-
 export default {
     createUserSchema,
     updateUserSchema,

@@ -1,6 +1,6 @@
-import { useLoginHeader } from './LoginHeader.hook';
-import { LOGIN_HEADER_STYLES } from './LoginHeader.styles';
-import type { LoginHeaderProps } from './LoginHeader.types';
+import { useLoginHeader } from './files/LoginHeader.hook';
+import { LOGIN_HEADER_STYLES } from './files/LoginHeader.styles';
+import type { LoginHeaderProps } from './files/LoginHeader.types';
 
 /**
  * @component LoginHeader

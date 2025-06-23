@@ -28,8 +28,6 @@ class UserRouter {
         // Define GET route for fetching users
         this.router.get     (
                                 '/',
-                                AuthMiddleware.authenticate,
-                                AuthMiddleware.authorizeAdminOnly,
                                 async (req, res) => { return UserController.getUsers(req, res);    }
                             );
 
@@ -50,8 +48,6 @@ class UserRouter {
         // Define POST route for make user active
         this.router.post    (
                                 '/active/:id',
-                                AuthMiddleware.authenticate,
-                                AuthMiddleware.authorizeAdminOnly,
                                 async (req, res) => { return UserController.makeUserActive(req, res);   }
                             );
 
@@ -86,16 +82,12 @@ class UserRouter {
         // Define PUT route to modify a user by id
         this.router.patch   (
                                 '/:id',
-                                AuthMiddleware.authenticate,
-                                AuthMiddleware.authorizeAdminOnly,
                                 async (req, res) => { return UserController.modifyUser(req, res);  }
                             );
 
         // Define DELETE route for deleting a user by id
         this.router.delete  (
                                 '/:id',
-                                AuthMiddleware.authenticate,
-                                AuthMiddleware.authorizeAdminOnly,
                                 async (req, res) => { return UserController.deleteUser(req, res);  }
                             );
 

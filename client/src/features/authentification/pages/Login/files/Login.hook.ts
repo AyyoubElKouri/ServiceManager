@@ -1,6 +1,6 @@
 import { useState, useCallback, type ChangeEvent, type FormEvent } from 'react';
 import { useNavigate } from 'react-router-dom';
-import secureStorage from '../../../../shared/secureStorage';
+import secureStorage from '../../../../../shared/secureStorage';
 import { loginUser } from './Login.services';
 import { validateLoginForm, createLoginPayload } from './Login.utils';
 import {
