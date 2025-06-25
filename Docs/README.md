@@ -11,7 +11,8 @@ Voici le diagramme de classe de notre système :
 ![Diagramme de Séquence](./class.png)
 ds
 ![Diagramme de Séquence](./c.png)
-
+fg
+![Diagramme de Séquence](./cc.png)
 c 
 # Use Case – Create Task
 
