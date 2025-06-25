@@ -14,6 +14,8 @@ ds
 fg
 ![Diagramme de Séquence](./cc.png)
 c 
+![Diagramme de Séquence](./ccc.png)
+c 
 # Use Case – Create Task
 
 ## 📄 Identifier
