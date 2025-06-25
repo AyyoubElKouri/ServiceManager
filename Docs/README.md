@@ -10,7 +10,7 @@ Voici le diagramme de classe de notre système :
 
 ![Diagramme de Séquence](./class.png)
 ds
-![Diagramme de Séquence](./Capture d’écran du 2025-06-25 20-24-07.png)
+![Diagramme de Séquence](./c.png)
 
 c 
 # Use Case – Create Task
