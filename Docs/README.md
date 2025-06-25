@@ -4,6 +4,11 @@
 Voici le diagramme de séquence de notre système :
 
 ![Diagramme de Séquence](./sequence.png)
+
+Voici le diagramme de classe de notre système :
+
+![Diagramme de Séquence](./class.png)
+
 c 
 # Use Case – Create Task
 
