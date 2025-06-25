@@ -7,7 +7,7 @@ Voici le diagramme de séquence de notre système :
 
 Voici le diagramme de classe de notre système :
 
-![Diagramme de Séquence](./class.png)
+![Diagramme de Séquence](./class.jpg)
 
 c 
 # Use Case – Create Task
