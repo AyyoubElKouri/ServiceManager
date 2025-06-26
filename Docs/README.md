@@ -10,8 +10,7 @@ Voici le diagramme de classe de notre système :
 
 ds
 ![Diagramme de Séquence](./c.png)
-fg
-c 
+pour le diage d'activité il es tla 
 ![Diagramme de Séquence](./cccc.png)
 c 
 # Use Case – Create Task
