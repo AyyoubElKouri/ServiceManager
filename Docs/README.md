@@ -8,11 +8,9 @@ Voici le diagramme de séquence de notre système :
 Voici le diagramme de classe de notre système :
 
 
-![Diagramme de Séquence](./class.png)
 ds
 ![Diagramme de Séquence](./c.png)
 fg
-![Diagramme de Séquence](./cc.png)
 c 
 ![Diagramme de Séquence](./cccc.png)
 c 
